@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+	<default-config>
+		<property name="user">root</property>
+		<property name="password">231045</property>
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="jdbcUrl">jdbc:mysql:///yt</property>
+		<!--初始化数据库连接池时的连接数量 -->
+		<property name="initialPoolSize">50</property>
+		<!--数据库连接池最大空闲时间连接的最大空闲时间，如果超过这个时间，某个数据库连接还没有被使用，则会断开掉这个连接如果为0，则永远不会断开连接 -->
+		<property name="maxIdleTime">30</property>
+		<!--数据库连接池中最大的数据库连接数 -->
+		<property name="maxPoolSize">20</property>
+		<!--数据库连接池中最小的数据库连接数 -->
+		<property name="minPoolSize">10</property>
+		<!--数据库中连接数不足是，一次向数据库服务器申请多少个连接 -->
+		<property name="acquireIncrement">5</property>
+	</default-config> <!-- This app is massive! -->
+</c3p0-config> 
